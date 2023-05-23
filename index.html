@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Roboto">
+    <!-- Font Family Import -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel = "stylesheet" type="text/css" href="css/style.css">
+    <!-- Boxicon Icons import -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Rodolfo Rivera - Programmer</title>
 </head>
 <body>
-    <div class="header">
+    <!-- <div class="header">
         <div class="inner_header">
             <div class="logo_container">
                 <h1>Rodolfo Rivera</h1>
@@ -28,7 +30,19 @@
         <div class="body">
             
         </div>
-    </div>
+    </div> -->
+    <header class="header">
+        <a href="#" class="logo">Rodolfo Rivera</a>
+
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+            <a href="#"><img src="./img/moon.svg" alt="Moon" id="moon"></a>
+        </nav>
+    </header>
+    
     <script>
         var icon = document.getElementById("moon");
         icon.onclick = function(){

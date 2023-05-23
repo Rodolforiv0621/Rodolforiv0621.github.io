@@ -1,8 +1,12 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+
 :root {
-  --one: #03045e;
+  /* --one: #03045e;
   --primary2: #023e8a;
-  --primary: #0077b6;
-  --four: #0096c7;
+  --primary0: #0077b6;
+  --primary: #01497C;
   --five: #00b4d8;
   --six: #48cae4;
   --seven: #90e0ef;
@@ -10,37 +14,74 @@
   --light: #0f0f0f;
   --text: #0f0f0f;
   --button: #0f0f0f;
-  --background-color: #e8eff1;
+  --background-color: #e8eff1; */
+  --bg-color: #01497C;
+  --secondary-bd-color: #2A6F97;
+  --text-color: #ededed;
+  --primary: #4696af;
 }
 .dark_theme {
   --background-color: #0f0f0f;
-  --four: #0096c7;
+  --primary: #0096c7;
   --text: #e8eff1;
   --button: #e8eff1;
 }
 * {
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  list-style: none;
-  text-decoration: none;
-  background-color: var(--background-color);
+  font-family: 'Roboto', sans-serif;
+  /* background-color: var(--background-color); */
+}
+html{
+  font-size: 62%;
+  overflow-x: hidden;
+}
+body{
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 .header {
   width: 100%;
-  height: 80px;
-  display: block;
-  background-color: var(--four);
+  display: fixed;
+  padding: 2rem 9%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo{
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-weight: 600;
 }
 
-.inner_header {
+.navbar a{
+  font-size: 1.7rem;
+  color: var(--text-color);
+  font-weight: 500;
+  margin-left: 3.5rem;
+  transition: .3s;
+}
+
+.navbar a:hover{
+  color: var(--primary);
+}
+/* .inner_header {
   width: 85%;
   height: 100%;
   display: block;
   margin: 0 auto;
-  background-color: var(--four);
-}
+  background: transparent;
+} */
 
-.logo_container {
+/* .logo_container {
   height: 100%;
   display: table;
   float: left;
@@ -53,7 +94,6 @@
   vertical-align: middle;
   font-family: "Roboto", sans-serif;
   font-size: 32px;
-  background-color: var(--four);
 }
 
 .navigation {
@@ -66,7 +106,7 @@
   display: table;
   float: left;
   padding: 0 20px;
-  background-color: var(--four);
+  
 }
 
 .navigation a li {
@@ -74,12 +114,11 @@
   vertical-align: middle;
   height: 100%;
   color: var(--text);
-  background-color: var(--four);
+  cursor: pointer;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-}
+} */
 
 #moon {
-  background-color: var(--four);
-  width: 30px;
+  width: 25px;
 }
