@@ -359,7 +359,7 @@ section{
 
 .input-field{
   position: relative;
-  width: 50%;
+  width: 49.5%;
   margin: .8rem 0;
 }
 
@@ -372,4 +372,9 @@ section{
   background: transparent;
   border-radius: .5rem;
   border: .3rem solid var(--primary);
+}
+
+.Projects{
+  background: var(--secondary-bd-color);
+  padding-bottom: 6rem;
 }
