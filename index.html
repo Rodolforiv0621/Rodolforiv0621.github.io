@@ -36,10 +36,11 @@
 
         <div class="bx bx-menu" id="menu-icon"></div>
         <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
+            <a href="#home" class="active">Home</a>
+            <!-- <a href="#">About</a> -->
+            <a href="#portfolio">Portfolio</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         
         </nav>
     </header>
@@ -63,7 +64,7 @@
     </section>
 
     <!-- about section -->
-    <section class="about">
+    <!-- <section class="about">
         <h2 class="heading">About <span>Me</span></h2>
 
         <div class="about-img">
@@ -78,10 +79,10 @@
                 <a href="#" class="btn">Read More</a>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- education section -->
-    <section class="education">
+    <section class="education" id="portfolio">
         <h2 class="heading">My <span>Journey</span></h2>
         
         <div class="education-row">
@@ -150,12 +151,12 @@
     </section>
 
     <!-- Previous Work Section -->
-    <section class="Projects">
+    <section class="Projects" id="projects">
         <h2 class="heading"><span>Projects</span></h2>
     </section>
 
     <!-- Contact Form section -->
-    <section class="contact">
+    <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
 
         <form action="#">
@@ -170,9 +171,9 @@
                 </div>
             </div>
 
-             <div class="input-box">
+            <div class="input-box">
                 <div class="input-field">
-                    <input type="number" placeholder="Mobile Number">
+                    <input type="number" placeholder="Mobile Number" required>
                     <span class="focus" ></span>
                 </div>
                 <div class="input-field">
@@ -182,7 +183,8 @@
             </div>
 
             <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+                <textarea class="textarea" name="" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+                <span class="focus"></span>
             </div>
 
             <div class="btn-box btns">
@@ -190,5 +192,13 @@
             </div>
         </form>
     </section>
+
+    <footer class="footer">
+        <div class="footer-topIcon">
+            <a href="#"><i class='bx bxs-chevron-up'></i></a>
+        </div>
+    </footer>
+    <script src="index.js"></script>
 </body>
+
 </html>
