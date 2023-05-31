@@ -34,13 +34,13 @@
     <header class="header">
         <a href="#" class="logo">Rodolfo</a>
 
-        <div class="bx bx-menu" id="menu-icon"></div>
+        <div class="bx bx-menu" id="menu-icon" onclick="x()" ></div>
         <nav class="navbar">
-            <a href="#home" class="active">Home</a>
+            <a href="#home" class="active" onclick="removeMenu()" >Home</a>
             <!-- <a href="#">About</a> -->
-            <a href="#portfolio">Portfolio</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#portfolio" onclick="removeMenu()">Portfolio</a>
+            <a href="#projects" onclick="removeMenu()" >Projects</a>
+            <a href="#contact" onclick="removeMenu()" >Contact</a>
         
         </nav>
     </header>
