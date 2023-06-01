@@ -615,3 +615,14 @@ form .textarea:valid~.focus, form .textarea:focus~.focus
     font-size: 5rem;
   }
 }
+
+.success-div{
+  padding-top: 5.5rem;
+}
+.success-h1{
+  font-size: 5.5rem;
+}
+
+.success-p{
+  font-size: 2.3rem;
+}
