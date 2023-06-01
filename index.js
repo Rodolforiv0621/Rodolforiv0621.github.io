@@ -1,5 +1,13 @@
 
 
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+function x(){
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+}
+
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
@@ -20,3 +28,10 @@ window.onscroll = () =>{
         }
     })
 }
+
+function removeMenu(){
+   menuIcon.classList.remove("bx-x");
+    navbar.classList.remove("active"); 
+}
+
+
