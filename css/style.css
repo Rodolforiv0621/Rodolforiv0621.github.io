@@ -621,8 +621,9 @@ form .textarea:valid~.focus, form .textarea:focus~.focus
 }
 .success-h1{
   font-size: 5.5rem;
+  font-weight: 500;
 }
 
 .success-p{
-  font-size: 2.3rem;
+  font-size: 2.2rem;
 }
