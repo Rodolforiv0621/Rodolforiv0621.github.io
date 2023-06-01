@@ -157,22 +157,24 @@ section{
     width: 100%;
     height: 0;
     background-color: var(--primary);
-    z-index: -1;
+    z-index: 1;
     transition: .4s;
 }
 
-.connect a:hover{
-  color: var(--bg-color);
-}
+/* .connect a:hover{
+  background: var(--bg-color);
+} */
 
 .connect .github:hover::before{
   height: 100%;
   content: 'github';
+  color: var(--bg-color);
 }
 
 .connect .linkedin:hover::before{
   height: 100%;
   content: 'linkedin';
+  color: var(--bg-color);
 }
 
 .img{
