@@ -634,3 +634,21 @@ form .textarea:valid~.focus, form .textarea:focus~.focus
 .success-p{
   font-size: 2.2rem;
 }
+
+
+
+/* coming soon */
+.coming-soon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.coming{
+  position: relative;
+  top: -200px;
+  font-size: 3.5rem;
+}
