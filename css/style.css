@@ -283,6 +283,7 @@ section{
   align-items: center;
   flex-direction: column;
   padding-bottom: 5rem;
+  /* min-height: 100vh; */
 }
 
 .education .education-row{
@@ -369,11 +370,17 @@ user-select: none;
   font-size: 2rem;
 }
 
+.education-content .content h4{
+  font-size: 1.5rem;
+}
 .education-content .content p{
   font-size: 1.5rem;
   padding-top: .5rem;
+  line-height: 2.5rem;
 }
-
+.bullets{
+  
+}
 .contact{
   /* min-height: auto; */
   padding-bottom: 7rem;
