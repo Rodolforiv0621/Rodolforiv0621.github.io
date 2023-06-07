@@ -8,7 +8,8 @@
     ],
     "redirects": [{
       "source": "/success",
-      "destinatinon": "/success.html"
+      "destination": "/success.html",
+      "type": 301
     }]
   }
 }
