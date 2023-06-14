@@ -436,7 +436,7 @@ form .textarea:valid~.focus, form .textarea:focus~.focus
 }
 
 .Projects{
-  background: var(--secondary-bd-color);
+  /* background: var(--bg-color); */
   padding-bottom: 6rem;
 }
 
@@ -643,13 +643,13 @@ form .textarea:valid~.focus, form .textarea:focus~.focus
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
 }
 
 .coming{
   position: relative;
-  top: -200px;
+  top: 175px;
   font-size: 3.5rem;
 }
 
