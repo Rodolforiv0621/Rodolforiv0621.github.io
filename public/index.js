@@ -23,10 +23,16 @@ window.onscroll = () =>{
         if(top >= offset && top < offset + height){
             navLinks.forEach(links => {
                 links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');            
+                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
             })
         }
     })
+}
+
+async function navbarTransparent(){
+    await new Promise((resolve) => setTimeout(resolve, 750))
+    let header = document.querySelector('header');
+    header.classList.remove('sticky')
 }
 
 function removeMenu(){

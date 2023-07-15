@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KD3TCWYL6B"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-KD3TCWYL6B');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,35 +21,16 @@
     <title>Rodolfo Rivera</title>
 </head>
 <body>
-    <!-- <div class="header">
-        <div class="inner_header">
-            <div class="logo_container">
-                <h1>Rodolfo Rivera</h1>
-            </div>
-            <ul class="navigation">
-                <a><li>Home</li></a>
-                <a><li>About</li></a>
-                <a><li>Portfolio</li></a>
-                <a><li>Contact</li></a>
-                <a><li><img src="./img/moon.svg" alt="Moon" id="moon"></li></a>
-            </ul>
-        </div>
-    </div>
-    <div class="container">
-        <div class="body">
-            
-        </div>
-    </div> -->
     <header class="header">
         <a href="#" class="logo">Rodolfo</a>
 
         <div class="bx bx-menu" id="menu-icon" onclick="x()" ></div>
         <nav class="navbar">
-            <a href="#home" class="active" onclick="removeMenu()" >Home</a>
+            <a href="#home" class="active" onclick="removeMenu(); navbarTransparent()" >Home</a>
             <!-- <a href="#">About</a> -->
-            <a href="#portfolio" onclick="removeMenu()">Portfolio</a>
-            <a href="#projects" onclick="removeMenu()" >Projects</a>
-            <a href="#contact" onclick="removeMenu()" >Contact</a>
+            <a href="#portfolio" onclick="removeMenu(); navbarTransparent()">Portfolio</a>
+            <a href="#projects" onclick="removeMenu(); navbarTransparent()" >Projects</a>
+            <a href="#contact" onclick="removeMenu(); navbarTransparent()" >Contact</a>
         
         </nav>
     </header>
@@ -51,7 +41,7 @@
             <div class="text-animate">
                 <h3>Software Developer</h3>
             </div>
-            <p>Senior computer science student at CSUN, looking for a software developer role. I am
+            <p> Computer science student at CSUN, looking for a software developer role. I am
                 Seeking to leverage and utilize my programming knowledge to optimize code and learn to
                 become an exceptional programmer.
             </p>
@@ -160,7 +150,7 @@
                         <div class="content">
                             <h3>School Projects</h3>
                             <p>Throughout my academic journey, I actively engaged in various school projects that showcased my technical skills and problem solving abilities. These projects encompassed a diverse range of topics, such as software development
-                                , databases, and algorithm design. I have worked independently and with fellow students to develop programs in languages: Java, C++, Racket, Prolog, and Javascript, that not only deepened my understanding of computer science concepts but also fostered effective teamwork, communication, and project managment skills.
+                                , databases, and algorithm design. I have worked independently and with fellow students to develop programs in languages: Java, C++, Racket, Prolog, and Javascript, that not only deepened my understanding of computer science concepts but also fostered effective teamwork, communication, and project management skills.
                             </p>
                         </div>
                     </div>
@@ -183,16 +173,17 @@
     <section class="Projects" id="projects">
         <h2 class="heading">My <span>Projects</span></h2>
         <div class="projects-container">
-            <div class="project-card">
+            <div class="project-card card-1">
                 <a href="https://earworm-1200e.web.app/" target="_blank"  rel="noopener noreferrer">
                 <img src="./img/Earworm.png" alt="Earworm" class="earworm-img"></a>
                 <p>This is Earworm a social web app<br> For Testing:<br>Email: test@test.com<br>Password: thisisatest</p>
             </div>
-        <div class="coming-soon">
-         <h1 class="coming">
-                More Coming Soon...
-            </h1>    
-        </div>
+            <div class="project-card card-2">
+                <a href="https://rodolforiv0621.github.io/algorithm-visualizer/#/sorting" target="_blank"  rel="noopener noreferrer">
+                <img src="./img/Algo.png" alt="algorithm-visualizer" class="earworm-img"></a>
+                <p>This is my algorithms visualizer web app created in react to help gain a better understanding of how and why algorithms work
+            </div>
+            
        
             <!-- <div class="project-card">
                 <a href="#">
@@ -220,6 +211,7 @@
                 <p>This is Earworm a social web app</p>
             </div> -->
         </div>
+        
     </section>
 
 
