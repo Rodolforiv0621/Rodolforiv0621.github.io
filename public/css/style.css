@@ -183,21 +183,23 @@ section{
 
 
 .img{
-  position: absolute;
-  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   right: 0;
-  width: 45%;
-  height: 100%;
-  background: var(--bg-color);
-  opacity: .05;
-  z-index: 10;
+  width: 60%;
+  height: 90%;
+  /* background: var(--bg-color); */
+  opacity: .75;
 }
 
-.selfImg{
-  height: 100%;
-  position: absolute;
-  bottom: -10px;
-  right: 10px;
+.self{
+  width: 50%;
+  min-width: 160px;
+  height: auto;
+  border-radius: 80%;
+  border: 3px solid var(--primary);
+  z-index: 10;
 }
 
 .btn-box{
