@@ -692,11 +692,11 @@ form .textarea:valid~.focus, form .textarea:focus~.focus
   line-height: 2.1rem;
   overflow-wrap: break-word;
 }
-.earworm-img{
+.project-img{
  /* // position: relative; */
   width: 75%;
   height: auto;
-  
+  margin-bottom: .8rem;
 }
 
 @media screen and (max-width:1200px){
