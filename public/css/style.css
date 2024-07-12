@@ -668,22 +668,19 @@ form .textarea:valid~.focus, form .textarea:focus~.focus
 .projects-container{
   
   display: grid;
-  gap: 1rem;
-  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  grid-template-rows: repeat(1, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  height: 75vh;
   /* border: solid red;  */
-  min-height: 0;
-  min-width: 0;
-  max-height: 100vh;
-  padding-bottom: 10px;
+  margin: 0 10px;
+  padding-bottom: 0 10px;
 }
 
 .project-card{
   
   
   /* min-width: 400px; */
- 
+   
   text-align: center;
   /* box-shadow: 2.5rem 3.75rem 3rem -3.5rem rgb(2, 77, 253); */
 }
@@ -724,31 +721,34 @@ form .textarea:valid~.focus, form .textarea:focus~.focus
     line-height: 1.5rem;
     overflow-wrap: break-word;
   }
-  .earworm-img{
-  /* // position: relative; */
-    width: 65%;
-    height: auto;
-    
-  }
+  
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:650px){
+  .heading{
+    padding: 10px;
+    margin-bottom: 20px;
+    display:block;
+  }
   .projects-container{
   
-    display: grid;
+    display: flex;
+    margin-top: 20px; 
     align-items: center;
     justify-content: center;
-    grid-template-rows: repeat(1, 50vh);
-    grid-template-columns: repeat(1, 80vw);
-    
-   
+    flex-direction: column;
+    height: 100%;
     /* max-height: 100vh; */
     padding-bottom: 10px;
   }
-
+  .project-card img {
+    max-width: 100%;
+    height: auto;
+}
   .project-card{
+    flex: 1 1 calc(33.333% - 40px);
     
-    
+    margin: 10px;
     /* min-width: 400px; */
     text-align: center;
   }
@@ -758,10 +758,5 @@ form .textarea:valid~.focus, form .textarea:focus~.focus
     line-height: 1.5rem;
     overflow-wrap: break-word;
   }
-  .earworm-img{
-  /* // position: relative; */
-    width: 55%;
-    height: auto;
-    
-  }
+  
 }

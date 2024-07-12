@@ -29,7 +29,8 @@
   border-radius: 10px;
 }
 p{
-    font-size: 1.7rem;
+    font-size: 2rem;
+    color: rgb(237, 237, 237, 0.8);
     margin: 2rem 0 4rem;
 }
 .home h1 span{
