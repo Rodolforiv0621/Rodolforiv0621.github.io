@@ -111,10 +111,40 @@ section{
     margin-top: 10rem;
     text-align: center;
 }
-
+.white{
+  color: var(--primary);
+}
 .home p{
   text-align: center;
 }
 .soon{
     margin-top: 15rem;
+}
+h2{
+  padding-top: 4rem;
+  font-size: 2.5rem;
+}
+h3{
+  padding: 2rem;
+  font-size: 1.8rem;
+}
+ul{
+  text-align: left;
+}
+li{
+  font-size: 2rem;
+  color: #ededed;
+}
+.list{
+  margin: 0 auto;
+  width: fit-content;
+  padding: 0;
+}
+@media screen and (max-width:520px){
+  h2{
+    padding-top: 2rem;
+  }
+  .home p{
+    text-align: left;
+  }
 }
