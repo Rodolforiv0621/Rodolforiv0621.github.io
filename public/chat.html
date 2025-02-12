@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/chat.css">
+    <title>Chat Program</title>
+</head>
+<header class="header">
+    <a href="index.html" class="logo">Rodolfo</a>
+
+    <div class="bx bx-menu" id="menu-icon" onclick="x()" ></div>
+    <nav class="navbar">
+        <a href="index.html" class="active" onclick="removeMenu(); navbarTransparent()" >Home</a>
+        <!-- <a href="#">About</a> -->
+        <a href="index.html#portfolio" onclick="removeMenu(); navbarTransparent()">Portfolio</a>
+        <a href="index.html#projects" onclick="removeMenu(); navbarTransparent()" >Projects</a>
+        <a href="index.html#contact" onclick="removeMenu(); navbarTransparent()" >Contact</a>
+    
+    </nav>
+</header>
+<body>
+    <section class="home" id="home">
+        <h1 class="title">Chat Program</h1>
+        <p>This Chat Program is a web app that allows users to chat with each other in real time. </p>
+        <p>You can view source code <a href="https://github.com/Rodolforiv0621/ChatApp/blob/main/chat.py" style="color:green" target="_blank"  rel="noopener noreferrer">here</a> and a demo below</p>
+        <h2>Technical Details</h2>
+        
+        <div class="list">
+            <h3>Tools Used</h3>
+            <ul>
+                <li><span class="white">Threading</span> - to spawn concurrent conversations, enabling asynchronous, bidirectional text communication</li>
+                <li><span class="white">TCP Sockets</span> - For end to end network communication</li>
+                <li><span class="white">GitHub</span> - Version Control</li>
+                <li><span class="white">Discord</span> - Communication</li>
+            </ul> 
+        <video id="chatVideo" width="700" height="440" controls>
+            <source  src="./media/Chat App Demo.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var video = document.getElementById('chatVideo');
+            video.playbackRate = 1.25;
+        });
+    </script>
+    
+</body>
+</html>

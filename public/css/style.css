@@ -695,7 +695,15 @@ form .textarea:valid~.focus, form .textarea:focus~.focus
   height: auto;
   margin-bottom: .8rem;
 }
-
+.resume {
+  display: block;
+  margin: 0 auto; /* Center the iframe */
+  width: 70vw;
+  height: 70vh;
+  border: 2px solid var(--primary); /* Add a border for better visibility */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
 @media screen and (max-width:1200px){
   .projects-container{
   
@@ -722,6 +730,10 @@ form .textarea:valid~.focus, form .textarea:focus~.focus
     overflow-wrap: break-word;
   }
   
+  .resume {
+    width: 80vw;
+    height: 60vh;
+  }
 }
 
 @media screen and (max-width:650px){
@@ -758,5 +770,17 @@ form .textarea:valid~.focus, form .textarea:focus~.focus
     line-height: 1.5rem;
     overflow-wrap: break-word;
   }
+
+  .resume {
+    width: 90vw;
+    height: 50vh;
+  }
   
+}
+
+@media screen and (max-width: 480px) {
+  .resume {
+    width: 95vw;
+    height: 40vh;
+  }
 }
